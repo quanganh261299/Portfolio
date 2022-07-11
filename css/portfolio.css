@@ -232,7 +232,9 @@
 /*Project*/
 
 footer{
-	position: absolute;
+	display: flex;
+	justify-content: center;	
+	position: relative;
 	top: 830px;
 	color: #545454;
 	font-style: italic;
