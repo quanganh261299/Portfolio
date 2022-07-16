@@ -55,35 +55,42 @@
 			<!--Information Content-->
 			<!--About Me-->
         	<div class="content_tab" id="aboutme">
-        		<h3>About me</h3>
+        		<h3 id="aboutme_title">About me</h3>
         		<p id="info_aboutme">Tôi là một lập trình viên website. Tôi có hiểu biết về html/css, JavaScript cũng như một số thư viện web cơ bản như Bootstrap và Jquery. Các kĩ năng của tôi hiện tại vẫn còn hạn chế nhưng tôi sẽ cố gắng và nỗ lực hơn nữa để phát triển các kĩ năng lập trình của mình, mong muốn của tôi trong tương lai là trở thành một Full-Stack Developer về web/app</p>
         	</div>
 			<!--End About Me-->
 			<!--Skill-->
         	<div class="content_tab" id="skill">
-        		<h3>Skill</h3>
+        		<h3 id="skill_title">Skill</h3>
         		<div id="frontend_skill">
         			<h4 id="FE_skill_header">Frontend Skill</h4>
-        			<div class="skill_group">
-        				<div class="skill_data" id="firstCol_FE">
-        					<pre><i class="fa-solid fa-circle-check"></i> HTML</pre>
-        					<pre><i class="fa-solid fa-circle-check"></i> CSS</pre>
-        					<pre><i class="fa-solid fa-circle-check"></i> JavaScript</pre>
+					    <div class="skill_group">
+        				    <div class="skill_data" id="firstCol_FE">
+								<ul class="fa-ul">
+									<li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>HTML</li>
+									<li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>CSS</li>
+									<li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>JavaScript</li>
+								</ul>
+        					</div>
+        					<div class="skill_data" id="secondCol_FE">
+								<ul class="fa-ul">
+									<li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Bootstrap</li>
+									<li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Jquery</li>
+								</ul>
+        					</div>
         				</div>
-        				<div class="skill_data" id="secondCol_FE">
-        					<pre><i class="fa-solid fa-circle-check"></i> Bootstrap</pre>
-        					<pre><i class="fa-solid fa-circle-check"></i> Jquery</pre>
-        				</div>
-        			</div>
         		</div>
         		<div id="backend_skill">
         			<h4 id="BE_skill_header">Backend Skill</h4>
-        			<div class="skill_group">
-        				<div class="skill_data" id="secondCol_BE">
-        					<pre><i class="fa-solid fa-circle-check"></i> SQL</pre>
-        					<pre><i class="fa-solid fa-circle-check"></i> PHP</pre>
+        				<div class="skill_group">
+        					<div class="skill_data" id="secondCol_BE">
+								<ul class="fa-ul">
+									<li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>SQL</li>
+									<li><span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>PHP</li>
+								</ul>
+
+        					</div>
         				</div>
-        			</div>
         		</div>
         	</div>
 			<!--End Skill-->
@@ -97,7 +104,7 @@
         </div>
 		<!--End Information-->
 	    <!--Footer-->
-        <footer>Doãn Quang Anh 2022</footer>
+        <footer id="footer">Doãn Quang Anh 2022</footer>
 	    <!--End Footer-->
     </div>
 	<script type="text/javascript" src="javascript/portfolio.js"></script>

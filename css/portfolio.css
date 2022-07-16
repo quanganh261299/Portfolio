@@ -116,7 +116,7 @@
 /*Center content*/
 #row_information{
 	display: flex;
-    justify-content: center;
+   justify-content: center;
 }
 
 /*Button tab nav bar*/
@@ -187,12 +187,24 @@
 	margin-bottom: 50px;
 }
 
+#aboutme_title{
+	text-align: center;
+}
+
 #info_aboutme{
 	max-width: 500px;
 	text-align: justify;
 }
 
 /*Skill*/
+#skill_title{
+	text-align: center;
+}
+
+.fa-ul li{
+	padding-bottom: 10px;
+}
+
 #frontend_skill{
 	position: relative;
 	right: 300px;
