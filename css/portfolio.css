@@ -300,20 +300,42 @@
 	opacity:0;
 	color: white;
 	font-size: 20px;
-	padding: 20px;
+	padding: 15px;
 	text-align: center;
+}
+
+.project_title{
+	font-size: 15px;
+	margin-bottom: 0;
+}
+
+.overlay a{
+	color: white;
 }
 
 .project_content:hover .overlay {
 	opacity: 1;
-  }
+}
 
-/*Footer*/
+/*FOOTER*/
 footer{
-	display: flex;
-	justify-content: center;	
-	position: relative;
-	top: 830px;
-	color: #545454;
-	font-style: italic;
+	font-weight: bold;
+	font-family: "Montserrat";
+	font-size: 15px;
+	text-align: center;
+	opacity: 0.5;
+	width: 100%;
+	height: 23px;
+}
+
+#project_footer{
+	position: absolute;
+	margin-left: -15px;
+	bottom: -5%;
+}
+
+#aboutme_footer, #skill_footer{
+	position: absolute;
+	margin-left: -15px;
+	bottom: -22%;
 }
