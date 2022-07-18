@@ -31,6 +31,7 @@ $('#iconLight').click(function() {
                 document.getElementById("aboutme").style.background = "#E9EBEC";
                 document.getElementById("aboutme").style.color = "black";
                 document.getElementById("skill").style.color = "black";
+                document.getElementById("project").style.color = "black";
                 document.getElementById("footer").style.color = "#545454";
             }
             else{
@@ -56,6 +57,7 @@ $('#iconLight').click(function() {
                 document.getElementById("aboutme").style.background = "#171F26";
                 document.getElementById("aboutme").style.color = "white";
                 document.getElementById("skill").style.color = "white";
+                document.getElementById("project").style.color = "white";
                 document.getElementById("footer").style.color = "white";
             }
 });
