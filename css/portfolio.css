@@ -117,6 +117,7 @@
 #row_information{
 	display: flex;
    justify-content: center;
+   align-items: center;
 }
 
 /*Button tab nav bar*/
@@ -242,7 +243,72 @@
 }
 
 /*Project*/
+#project{
+	margin: 0 10px;
+}
 
+/* Clear floats after the columns */
+#project:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#project h3{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.project_column{
+	float: left;
+	width: 33.33%;
+	padding: 0 10px;
+}
+
+.project_content img{
+	width: 100%; /* or any custom size */
+    height: 100%; 
+	object-fit: contain;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+  
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .project_column {
+	  width: 100%;
+	  display: block;
+	  margin-bottom: 20px;
+	}
+}
+
+.project_content{
+	position: relative;
+}
+
+.overlay {
+	position: absolute; 
+	bottom: 0; 
+	margin-bottom: 20px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	color: #f1f1f1; 
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.project_content:hover .overlay {
+	opacity: 1;
+  }
+
+/*Footer*/
 footer{
 	display: flex;
 	justify-content: center;	
