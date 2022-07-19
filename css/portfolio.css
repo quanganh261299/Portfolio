@@ -1,4 +1,4 @@
-/*PROFILE PART CSS*/
+/*===============PROFILE PART CSS===============*/
 
 /*Center content*/
 #row_profile{ 
@@ -75,6 +75,7 @@
 	color: #d600bd !important;
 }
 
+
 /*Profile contact*/
 #contact{
 	top: 380px;
@@ -111,7 +112,52 @@
 	background: #324454 !important;
 }
 
-/*INFORMATION PART CSS*/
+/*For small devices*/
+@media screen and (max-width: 320px){
+	#iconLight{
+		font-size: 15px;
+	}
+	#portrait{
+		width: 75px;
+		height: 75px;
+		top: 50px;
+		border: 1px solid white;
+		outline: 1px solid #42a5f5;
+	}
+	#profile_name{
+		top: 135px;
+		font-size: 15px;
+	}
+	#profile_job{
+		top: 155px;
+		font-size: 10px;
+		font-weight: bold;
+		font-style: italic;
+		color: grey;
+	}
+	#profile_icon{
+		top:170px;
+		font-size: 10px;
+	}
+	#contact{
+		top: 200px;
+	}
+	#CV_button{
+		border: none;
+		font-size: 10px;
+		padding: 10px 20px;
+		border-radius: 5px;
+	}
+	.contact_button{
+		border: none;
+		font-size: 10px;
+		padding: 4px 6px;
+		border-radius: 4px;
+		left: 10px;
+	}
+}
+
+/*===============INFORMATION PART CSS===============*/
 
 /*Center content*/
 #row_information{
@@ -317,7 +363,7 @@
 	opacity: 1;
 }
 
-/*FOOTER*/
+/*===============FOOTER===============*/
 footer{
 	font-weight: bold;
 	font-family: "Montserrat";
