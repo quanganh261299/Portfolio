@@ -477,7 +477,7 @@
 
 	#skill_tab{
 		position: relative;
-		right: 0;
+		left: 0px;
 	}
 	
 	#project_tab{
