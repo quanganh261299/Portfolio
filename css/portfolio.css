@@ -664,7 +664,7 @@
 		left: 50px;
 	}
 
-	#firstCol_FE, #secondCol_FE{
+	#firstCol_FE{
 		position: relative;
 		left: -5px;
 	}
@@ -709,6 +709,14 @@
 		font-size: 15px;
 	}
 }
+
+/*Fix a little bug with width 600px*/
+@media screen and (width: 600px){
+	#skill_tab{
+		left: 10px;
+	}
+}
+
 
 /*For large devices*/
 @media screen and (min-width: 600px) and (max-width:900px){
