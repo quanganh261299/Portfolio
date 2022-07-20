@@ -114,7 +114,7 @@
 
 /*=========RESPONSIVE==========*/
 /*For small devices*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 320px){
 	#iconLight{
 		font-size: 15px;
 	}
@@ -154,6 +154,50 @@
 		font-size: 10px;
 		padding: 4px 6px;
 		border-radius: 4px;
+		left: 10px;
+	}
+}
+/*For medium devices*/
+@media screen and (max-width: 600px){
+	#iconLight{
+		font-size: 20px;
+	}
+	#portrait{
+		width: 125px;
+		height: 125px;
+		top: 50px;
+		border: 3px solid white;
+		outline: 3px solid #42a5f5;
+	}
+	#profile_name{
+		top: 185px;
+		font-size: 20px;
+	}
+	#profile_job{
+		top: 215px;
+		font-size: 15px;
+		font-weight: bold;
+		font-style: italic;
+		color: grey;
+	}
+	#profile_icon{
+		top:240px;
+		font-size: 15px;
+	}
+	#contact{
+		top: 275px;
+	}
+	#CV_button{
+		border: none;
+		font-size: 15px;
+		padding: 15px 25px;
+		border-radius: 5px;
+	}
+	.contact_button{
+		border: none;
+		font-size: 15px;
+		padding: 8px 12px;
+		border-radius: 5px;
 		left: 10px;
 	}
 }
@@ -357,8 +401,8 @@
 }
 
 /*=========RESPONSIVE==========*/
-
-@media screen and (max-width: 600px){
+/*For small devices*/
+@media screen and (max-width: 320px){
 	/*Responsive Tab button*/
 	#button_tab{
 		top: 270px;
@@ -486,7 +530,137 @@
 	}
 }
 
+/*For medium devices*/
+@media screen and (max-width: 600px){
+	/*Responsive Tab button*/
+	#button_tab{
+		top: 350px;
+		padding: 15px 40px 15px 20px;
+		border-radius: 5px;
+	}
+	
+	.tab_link{
+		border: none;
+		padding: 10px 15px;
+		border-radius: 5px;
+		width: 150px;
+		font-size: 15px;
+	}
 
+	#aboutme_tab{
+		position: relative;
+		left: -5px;
+	}
+
+	#skill_tab{
+		position: relative;
+		right: 0;
+	}
+	
+	#project_tab{
+		position: relative;
+		left: 5px;
+	}
+	/*Responsive aboutme*/
+	#aboutme{
+		padding: 5px 10px;
+		border-radius: 5px;
+		margin-bottom: 0;
+		position: relative;
+		top: 445px;
+	}
+	
+	#aboutme_title{
+		text-align: center;
+		font-size: 25px;
+	}
+	
+	#info_aboutme{
+		max-width: 485px;
+		font-size: 15px;
+		text-align: justify;
+	}
+	/*Responsive skill*/
+	#skill{
+		position: relative;
+		top: 445px;
+	}
+
+	#skill_title{
+		font-size: 25px;
+	}
+	
+	.fa-ul li{
+		font-size: 15px;
+		left: 30px;
+		padding-bottom: 5px;
+	}
+	
+	
+	#frontend_skill{
+		position: relative;
+		right: 295px;
+		text-align: justify;
+	}
+	
+	.skill_group{
+		position: relative;
+	}
+	
+	#FE_skill_header{
+		position: relative;
+		font-size: 20px;
+		left: 50px;
+	}
+
+	#firstCol_FE{
+		position: relative;
+	}
+
+	#secondCol_FE{
+		position: absolute;
+	}
+		
+	#backend_skill{
+		position: relative;
+		left: 215px;
+		text-align: justify;
+	}
+
+	#BE_skill_header{
+		position: relative;
+		font-size: 20px;
+	}
+	
+	#firstCol_BE{
+		position: relative;
+		left: -10px;
+	}
+
+	/*Responsive project*/
+	#project{
+		position: relative;
+		top: 445px;
+	}
+	
+	#project h3{
+		text-align: center;
+		padding-bottom: 30px;
+		font-size: 25px;
+	}
+
+	.overlay{
+		padding: 15px;
+	}
+
+	.project_title{
+		font-size: 15px;
+	}
+
+	.overlay a{
+		font-size: 20px;
+	}
+}
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
@@ -535,6 +709,27 @@ footer{
 	#aboutme_footer{
 		margin-left: -15px;
 		bottom: -30px;
+	}
+
+	#skill_footer{
+		margin-left: 0px;
+		bottom: -100px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	footer{
+		font-size: 15px;
+	}
+
+	#project_footer{
+		margin-left: -15px;
+		bottom: -5px;
+	}
+
+	#aboutme_footer{
+		margin-left: -15px;
+		bottom: -40px;
 	}
 
 	#skill_footer{
