@@ -536,7 +536,7 @@
 }
 
 /*For medium devices*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
 	/*Responsive Tab button*/
 	#button_tab{
 		top: 350px;
@@ -722,7 +722,7 @@ footer{
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 	footer{
 		font-size: 15px;
 	}
