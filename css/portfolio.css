@@ -114,7 +114,7 @@
 
 /*=========RESPONSIVE==========*/
 /*For small devices*/
-@media screen and (max-width: 320px){
+@media screen and (max-width: 321px){
 	#iconLight{
 		font-size: 15px;
 	}
@@ -157,8 +157,55 @@
 		left: 10px;
 	}
 }
+
 /*For medium devices*/
-@media screen and (max-width: 900px){
+@media screen and (min-width:321px) and (max-width: 600px){
+	#iconLight{
+		font-size: 15px;
+	}
+	#portrait{
+		width: 100px;
+		height: 100px;
+		top: 50px;
+		border: 2px solid white;
+		outline: 2px solid #42a5f5;
+	}
+	#profile_name{
+		top: 165px;
+		font-size: 20px;
+	}
+	#profile_job{
+		top: 195px;
+		font-size: 15px;
+		font-weight: bold;
+		font-style: italic;
+		color: grey;
+	}
+	#profile_icon{
+		top:220px;
+		font-size: 12px;
+	}
+	#contact{
+		top: 250px;
+	}
+	#CV_button{
+		border: none;
+		font-size: 12px;
+		padding: 8px 12px;
+		border-radius: 4px;
+	}
+	.contact_button{
+		border: none;
+		font-size: 10px;
+		padding: 5px 7px;
+		border-radius: 5px;
+		left: 10px;
+	}
+}
+
+
+/*For large devices*/
+@media screen and (min-width: 600px) and (max-width:900px){
 	#iconLight{
 		font-size: 20px;
 	}
@@ -407,7 +454,7 @@
 
 /*=========RESPONSIVE==========*/
 /*For small devices*/
-@media screen and (max-width: 320px){
+@media screen and (max-width: 321px){
 	/*Responsive Tab button*/
 	#button_tab{
 		top: 270px;
@@ -536,7 +583,135 @@
 }
 
 /*For medium devices*/
-@media screen and (max-width: 900px){
+@media screen and (min-width: 321px) and (max-width:600px){
+	#button_tab{
+		top: 310px;
+		padding: 8px 15px 11px 15px;
+		border-radius: 5px;
+	}
+	
+	.tab_link{
+		border: none;
+		padding: 5px 5px;
+		border-radius: 5px;
+		width: 100px;
+		font-size: 10px;
+	}
+
+	#aboutme_tab{
+		position: relative;
+		left: -5px;
+	}
+
+	#skill_tab{
+		position: relative;
+		left: 0px;
+	}
+	
+	#project_tab{
+		position: relative;
+		left: 5px;
+	}
+	/*Responsive aboutme*/
+	#aboutme{
+		padding: 10px 39px;
+		border-radius: 5px;
+		margin-bottom: 0;
+		position: relative;
+		top: 375px;
+	}
+	
+	#aboutme_title{
+		text-align: center;
+		font-size: 20px;
+	}
+	
+	#info_aboutme{
+		max-width: 250px;
+		font-size: 16px;
+		text-align: justify;
+	}
+	/*Responsive skill*/
+	#skill{
+		position: relative;
+		top: 375px;
+	}
+
+	#skill_title{
+		font-size: 20px;
+	}
+	
+	.fa-ul li{
+		font-size: 10px;
+		left: 30px;
+		padding-bottom: 5px;
+	}
+	
+	
+	#frontend_skill{
+		position: relative;
+		right: 190px;
+		text-align: justify;
+	}
+	
+	.skill_group{
+		position: relative;
+	}
+	
+	#FE_skill_header{
+		position: relative;
+		font-size: 15px;
+		left: 50px;
+	}
+
+	#firstCol_FE, #secondCol_FE{
+		position: relative;
+		left: -5px;
+	}
+		
+	#backend_skill{
+		position: relative;
+		left: 115px;
+		text-align: justify;
+	}
+
+	#BE_skill_header{
+		position: relative;
+		font-size: 15px;
+	}
+	
+	#firstCol_BE{
+		position: relative;
+		left: -25px;
+	}
+
+	/*Responsive project*/
+	#project{
+		position: relative;
+		top: 375px;
+	}
+	
+	#project h3{
+		text-align: center;
+		padding-bottom: 20px;
+		font-size: 20px;
+	}
+
+	.overlay{
+		padding: 10px;
+	}
+
+	.project_title{
+		font-size: 10px;
+	}
+
+	.overlay a{
+		font-size: 15px;
+	}
+}
+
+/*For large devices*/
+@media screen and (min-width: 600px) and (max-width:900px){
 	/*Responsive Tab button*/
 	#button_tab{
 		top: 350px;
@@ -564,7 +739,7 @@
 	
 	#project_tab{
 		position: relative;
-		left: 5px;
+		left: 25px;
 	}
 	/*Responsive aboutme*/
 	#aboutme{
@@ -665,6 +840,12 @@
 	.overlay a{
 		font-size: 20px;
 	}
+
+	.project_column {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
 }
 
 /* Responsive columns */
@@ -701,7 +882,7 @@ footer{
 
 /*=========RESPONSIVE==========*/
 /*Footer*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 321px) {
 	footer{
 		font-size: 10px;
 	}
@@ -722,7 +903,29 @@ footer{
 	}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 321px) and (max-width:600px){
+	footer{
+		font-size: 13px;
+	}
+
+	#project_footer{
+		margin-left: -15px;
+		bottom: -5px;
+	}
+
+	#aboutme_footer{
+		margin-left: -45px;
+		bottom: -40px;
+	}
+
+	#skill_footer{
+		margin-left: -60px;
+		bottom: -45px;
+		width: 300px;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
 	footer{
 		font-size: 15px;
 	}
