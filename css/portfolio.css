@@ -114,7 +114,7 @@
 
 /*=========RESPONSIVE==========*/
 /*For small devices*/
-@media screen and (max-width: 321px){
+@media screen and (min-width: 320px) and (max-width: 400px){
 	#iconLight{
 		font-size: 15px;
 	}
@@ -159,7 +159,7 @@
 }
 
 /*For medium devices*/
-@media screen and (min-width:321px) and (max-width: 600px){
+@media screen and (min-width:400px) and (max-width: 600px){
 	#iconLight{
 		font-size: 15px;
 	}
@@ -454,7 +454,7 @@
 
 /*=========RESPONSIVE==========*/
 /*For small devices*/
-@media screen and (max-width: 321px){
+@media screen and (min-width: 320px) and (max-width:400px){
 	/*Responsive Tab button*/
 	#button_tab{
 		top: 270px;
@@ -583,7 +583,7 @@
 }
 
 /*For medium devices*/
-@media screen and (min-width: 321px) and (max-width:600px){
+@media screen and (min-width: 400px) and (max-width:600px){
 	#button_tab{
 		top: 310px;
 		padding: 8px 15px 11px 15px;
@@ -882,7 +882,7 @@ footer{
 
 /*=========RESPONSIVE==========*/
 /*Footer*/
-@media screen and (max-width: 321px) {
+@media screen and (min-width: 320px) and (max-width: 400px) {
 	footer{
 		font-size: 10px;
 	}
@@ -903,7 +903,7 @@ footer{
 	}
 }
 
-@media screen and (min-width: 321px) and (max-width:600px){
+@media screen and (min-width: 400px) and (max-width:600px){
 	footer{
 		font-size: 13px;
 	}
