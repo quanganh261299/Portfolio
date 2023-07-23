@@ -1,0 +1,459 @@
+:root {
+    --primary-color: #49b0ff;
+    --primary-darker-color: #2F9BF4;
+    --background-color: #ffffff;
+    --text-button-color: #fff;
+    --linear-background-color: linear-gradient(to bottom right, #00aeff, #08b8cc, white);
+    --text-color: #000;
+    --youtube-color: #ff0000;
+    --facebook-color: #1877F2;
+    --github-color: #800080;
+    --container-color: #d3d3d3;
+    --container-darker-color: #b5b5b5;
+    --overlay-color: rgba(0, 0, 0, 0.5);
+    --img-glow-color: rgba(0, 0, 0, 0.5);
+    --overlay-text-color: #fff;
+}
+
+.dark-theme {
+    --background-color: #0C151D;
+    --text-color: #fff;
+    --linear-background-color: linear-gradient(to right bottom, rgb(2, 118, 226), rgb(23, 103, 178), black);
+    --container-color: #777;
+    --container-darker-color: #999;
+    --img-glow-color: rgba(255, 255, 255, 0.5);
+    --overlay-text-color: #000;
+}
+
+html {
+    font-size: 0.625rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.container {
+    width: 100%;
+}
+
+#changeThemeBtn {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    cursor: pointer;
+    font-weight: 800;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+    color: var(--text-color);
+}
+
+#changeThemeBtn:hover {
+    color: var(--primary-darker-color);
+}
+
+/*===============PROFILE CSS===============*/
+
+#row_profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#row_profile > div {
+    margin-top: 1.5rem;
+}
+
+#row_profile img#portrait {
+    width: 15rem;
+    border: 0.4rem solid var(--background-color);
+    outline: 0.4rem solid var(--primary-color);
+    background-image: var(--linear-background-color);
+    border-radius: 50%;
+    margin-top: 4.5rem;
+}
+
+#row_profile .profile {
+    color: var(--text-color);
+    text-align: center;
+}
+
+#row_profile #profile_intro h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+#row_profile #profile_intro p {
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+#profile_icon a{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: .5rem;
+}
+
+#profile_icon .fa-youtube :hover{
+    color: var(--youtube-color);
+}
+
+#profile_icon .fa-facebook :hover{
+    color: var(--facebook-color);
+}
+
+#profile_icon .fa-github :hover{
+    color: var(--github-color);
+}
+
+#row_profile #contact {
+    margin-top: 4.5rem;
+}
+
+#contact #CV_button {
+    margin-right: 1.6rem;
+    padding: 2rem 4rem;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--text-button-color);
+    box-shadow: 2px 2px 1rem var(--primary-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+#contact #CV_button:hover{
+    background-color: var(--primary-darker-color);
+}
+
+#contact .contact_button {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    background: var(--container-color);
+    color: var(--text-color);
+}
+
+#contact .contact_button:hover{
+    background-color: var(--container-darker-color);
+    color: var(--background-color);
+}
+
+/*===============INFORMATION CSS===============*/
+
+/* ======INTRODUCTION CSS====== */
+#row_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#button_tab{
+    display: flex;
+	justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+	padding: 1.5rem;
+	background-color: var(--container-color);
+	border-radius: 5px;
+}
+
+#button_tab .tab_link{
+	padding: 2rem;
+	border-radius: 5px;
+	width: 15rem;
+    font-size: 1.4rem;
+	font-weight: bold;
+	text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#button_tab .tab_link:hover:not(.active){
+    background-color: var(--container-darker-color);
+}
+
+#button_tab .tab_link.active{
+    background-color: var(--background-color);
+}
+
+#row_information .content_tab{
+    opacity: 1;
+}
+
+#row_information .content_tab.active{
+    opacity: 0;
+}
+
+/* ======ABOUT ME CSS====== */
+#aboutme h3{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    color: var(--text-color);
+}
+
+#aboutme .aboutme_content{
+    background-color: var(--container-color);
+	padding: 1rem 1.5rem;
+	border-radius: 5px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+#aboutme p{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+	text-align: justify;
+    line-height: 1.6;
+    max-width: 60rem;
+}
+
+/* ======SKILL CSS====== */
+#skill h3{
+	text-align: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+#skill h4{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+#skill img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: contain;
+    padding: 2rem;
+    filter: drop-shadow(2px 5px 10px var(--img-glow-color));
+}
+
+#skill img:hover{
+    transition: transform 0.4s;
+    -webkit-transition: -webkit-transform 0.4s;
+    transform: scale(1.2) rotate(0.01deg);
+    -webkit-transform: scale(1.2) rotate(0.01deg);
+}
+
+/* ======PROJECT CSS====== */
+#project h3{
+	text-align: center;
+	font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+#project .project-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#project .project_column{
+    box-sizing: border-box;
+	width: calc(100%/3);
+    padding: 1rem;
+}
+
+#project .project_content{
+	position: relative;
+    height: 100%;
+    overflow: hidden; 
+    border-radius: 5px;
+}
+
+#project .project_content img{
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
+	margin-bottom: 2rem;
+	border-radius: 5px;
+    transition: transform .4s;
+}
+
+#project .overlay {
+    box-sizing: border-box;
+	position: absolute; 
+	background: var(--overlay-color);
+    bottom: 0;
+	width: 100%;
+    padding: 1.5rem;
+	height: auto;
+	border-radius: 5px;
+	transition: .5s ease;
+    opacity: 0;
+	color: var(--text-button-color);
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+#project .project_title{
+	font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#project .overlay p:not(.project-title){
+	margin-top: .5rem;
+    font-style: italic;
+}
+
+#project .project_content:hover img{
+    transform: scale(1.5);
+    transform-origin: 50% 50%;
+}
+
+#project .project_content:hover .overlay {
+	opacity: 1;
+}
+
+/*===============FOOTER CSS===============*/
+
+footer {
+    position: relative;
+    bottom: 0;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--text-color
+    );
+}
+
+/*===============RESPONSIVE CSS===============*/
+
+/* Tablet 768px - 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+
+    /* ======PROFILE CSS====== */
+    #row_profile img#portrait {
+        width: 12rem;
+    }
+
+    /* ======INTRODUCTION CSS====== */
+    #button_tab{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+    
+    #button_tab .tab_link{
+        width: 10rem;
+    }
+
+    /* ======SKILL CSS====== */
+    #skill img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    /* ======PROJECT CSS====== */
+    #project .project_column {
+        width: 50%;
+    }
+
+    #project .overlay {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    #project .project_title{
+        font-size: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    html{
+        font-size: 14px;
+    }
+
+    /* ======PROFILE CSS====== */
+    #row_profile img#portrait {
+        width: 10rem;
+    }
+
+    #row_profile #profile_intro h2 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    #row_profile #profile_intro p {
+        font-size: 1rem;
+        font-style: italic;
+        margin-top: 1rem;
+    }
+
+    #profile_icon a{
+        font-size: 1rem;
+    }
+
+    #contact #CV_button {
+        padding: 2rem 3rem;
+        font-size: 1rem;
+    }
+
+    #contact .contact_button {
+        font-size: 1rem;
+        padding: 1rem 1.2rem;
+    }
+
+    /* ======INTRODUCTION CSS====== */
+    #button_tab {
+        flex-direction: column;
+    }
+    
+    #button_tab .tab_link {
+        width: 15rem;
+    }
+
+    /* ======SKILL CSS====== */
+    #frontend_skill,
+    #backend_skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #skill img {
+        width: 15rem;
+        padding: 0;
+    }
+    
+    /* ======PROJECT CSS====== */
+    #project .overlay {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    #project .project_title{
+        font-size: 1rem;
+    }
+
+    #project .project_column {
+        width: 100%;
+    }
+}
+  
+  
+
+
